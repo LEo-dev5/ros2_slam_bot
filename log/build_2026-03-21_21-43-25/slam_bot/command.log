@@ -1,0 +1,6 @@
+Invoking command in '/home/kang/ros2_ws/build/slam_bot': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/kang/ros2_ws/src/slam_bot -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/slam_bot
+Invoked command in '/home/kang/ros2_ws/build/slam_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/kang/ros2_ws/src/slam_bot -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/slam_bot
+Invoking command in '/home/kang/ros2_ws/build/slam_bot': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/kang/ros2_ws/build/slam_bot -- -j4 -l4
+Invoked command in '/home/kang/ros2_ws/build/slam_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/kang/ros2_ws/build/slam_bot -- -j4 -l4
+Invoking command in '/home/kang/ros2_ws/build/slam_bot': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/kang/ros2_ws/build/slam_bot
+Invoked command in '/home/kang/ros2_ws/build/slam_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/kang/ros2_ws/build/slam_bot
