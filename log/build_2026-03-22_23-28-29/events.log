@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.000362] (slam_bot) JobQueued: {'identifier': 'slam_bot', 'dependencies': OrderedDict()}
+[0.000678] (slam_bot) JobStarted: {'identifier': 'slam_bot'}
+[0.010926] (slam_bot) JobProgress: {'identifier': 'slam_bot', 'progress': 'cmake'}
+[0.011813] (slam_bot) JobProgress: {'identifier': 'slam_bot', 'progress': 'build'}
+[0.012548] (slam_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kang/ros2_ws/build/slam_bot', '--', '-j4', '-l4'], 'cwd': '/home/kang/ros2_ws/build/slam_bot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kang', 'SSH_CLIENT': '192.168.219.122 49809 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/helpers/browser.sh', 'HOME': '/home/kang', 'OLDPWD': '/home/kang/ros2_ws', 'TERM_PROGRAM_VERSION': '1.100.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-2d4734ed-fc58-422f-b03b-906bb41b01bd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kang', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '256', 'PATH': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kang/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-405a4f7682.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kang/ros2_ws/build/slam_bot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.219.122 49809 192.168.219.119 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099738] (-) TimerEvent: {}
+[0.117704] (slam_bot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/position_estimator.dir/src/position_estimator.cpp.o\x1b[0m\n'}
+[0.199858] (-) TimerEvent: {}
+[0.300310] (-) TimerEvent: {}
+[0.400796] (-) TimerEvent: {}
+[0.501461] (-) TimerEvent: {}
+[0.601922] (-) TimerEvent: {}
+[0.702322] (-) TimerEvent: {}
+[0.802688] (-) TimerEvent: {}
+[0.903085] (-) TimerEvent: {}
+[1.003471] (-) TimerEvent: {}
+[1.103894] (-) TimerEvent: {}
+[1.204280] (-) TimerEvent: {}
+[1.304671] (-) TimerEvent: {}
+[1.405077] (-) TimerEvent: {}
+[1.505465] (-) TimerEvent: {}
+[1.605878] (-) TimerEvent: {}
+[1.706274] (-) TimerEvent: {}
+[1.806664] (-) TimerEvent: {}
+[1.907075] (-) TimerEvent: {}
+[2.007471] (-) TimerEvent: {}
+[2.107848] (-) TimerEvent: {}
+[2.208230] (-) TimerEvent: {}
+[2.308602] (-) TimerEvent: {}
+[2.408970] (-) TimerEvent: {}
+[2.509358] (-) TimerEvent: {}
+[2.609709] (-) TimerEvent: {}
+[2.710107] (-) TimerEvent: {}
+[2.810477] (-) TimerEvent: {}
+[2.910883] (-) TimerEvent: {}
+[3.011238] (-) TimerEvent: {}
+[3.111596] (-) TimerEvent: {}
+[3.211960] (-) TimerEvent: {}
+[3.312341] (-) TimerEvent: {}
+[3.412733] (-) TimerEvent: {}
+[3.513116] (-) TimerEvent: {}
+[3.613486] (-) TimerEvent: {}
+[3.713873] (-) TimerEvent: {}
+[3.814248] (-) TimerEvent: {}
+[3.914606] (-) TimerEvent: {}
+[4.014965] (-) TimerEvent: {}
+[4.115323] (-) TimerEvent: {}
+[4.215701] (-) TimerEvent: {}
+[4.316089] (-) TimerEvent: {}
+[4.416464] (-) TimerEvent: {}
+[4.516833] (-) TimerEvent: {}
+[4.617220] (-) TimerEvent: {}
+[4.717589] (-) TimerEvent: {}
+[4.817952] (-) TimerEvent: {}
+[4.918379] (-) TimerEvent: {}
+[5.018780] (-) TimerEvent: {}
+[5.119179] (-) TimerEvent: {}
+[5.219609] (-) TimerEvent: {}
+[5.319961] (-) TimerEvent: {}
+[5.420335] (-) TimerEvent: {}
+[5.520691] (-) TimerEvent: {}
+[5.621058] (-) TimerEvent: {}
+[5.721411] (-) TimerEvent: {}
+[5.821798] (-) TimerEvent: {}
+[5.922279] (-) TimerEvent: {}
+[6.022639] (-) TimerEvent: {}
+[6.122996] (-) TimerEvent: {}
+[6.223346] (-) TimerEvent: {}
+[6.323701] (-) TimerEvent: {}
+[6.424081] (-) TimerEvent: {}
+[6.524424] (-) TimerEvent: {}
+[6.624772] (-) TimerEvent: {}
+[6.725136] (-) TimerEvent: {}
+[6.825521] (-) TimerEvent: {}
+[6.926042] (-) TimerEvent: {}
+[7.026532] (-) TimerEvent: {}
+[7.065283] (slam_bot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable position_estimator\x1b[0m\n'}
+[7.126678] (-) TimerEvent: {}
+[7.227223] (-) TimerEvent: {}
+[7.327699] (-) TimerEvent: {}
+[7.428287] (-) TimerEvent: {}
+[7.465197] (slam_bot) StdoutLine: {'line': b'[100%] Built target position_estimator\n'}
+[7.485192] (slam_bot) CommandEnded: {'returncode': 0}
+[7.485994] (slam_bot) JobProgress: {'identifier': 'slam_bot', 'progress': 'install'}
+[7.503013] (slam_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kang/ros2_ws/build/slam_bot'], 'cwd': '/home/kang/ros2_ws/build/slam_bot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kang', 'SSH_CLIENT': '192.168.219.122 49809 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/helpers/browser.sh', 'HOME': '/home/kang', 'OLDPWD': '/home/kang/ros2_ws', 'TERM_PROGRAM_VERSION': '1.100.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-2d4734ed-fc58-422f-b03b-906bb41b01bd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kang', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '256', 'PATH': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kang/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-405a4f7682.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kang/ros2_ws/build/slam_bot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.219.122 49809 192.168.219.119 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[7.515525] (slam_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.515856] (slam_bot) StdoutLine: {'line': b'-- Installing: /home/kang/ros2_ws/install/slam_bot/lib/slam_bot/position_estimator\n'}
+[7.518802] (slam_bot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/kang/ros2_ws/install/slam_bot/lib/slam_bot/position_estimator" to ""\n'}
+[7.519090] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/package_run_dependencies/slam_bot\n'}
+[7.519244] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/parent_prefix_path/slam_bot\n'}
+[7.519393] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/ament_prefix_path.sh\n'}
+[7.519496] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/ament_prefix_path.dsv\n'}
+[7.519620] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/path.sh\n'}
+[7.519725] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/path.dsv\n'}
+[7.519817] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.bash\n'}
+[7.519957] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.sh\n'}
+[7.520057] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.zsh\n'}
+[7.520144] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.dsv\n'}
+[7.520230] (slam_bot) StdoutLine: {'line': b'-- Installing: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/package.dsv\n'}
+[7.520313] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/packages/slam_bot\n'}
+[7.520396] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/cmake/slam_botConfig.cmake\n'}
+[7.520484] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/cmake/slam_botConfig-version.cmake\n'}
+[7.520566] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/package.xml\n'}
+[7.522729] (slam_bot) CommandEnded: {'returncode': 0}
+[7.528353] (-) TimerEvent: {}
+[7.549059] (slam_bot) JobEnded: {'identifier': 'slam_bot', 'rc': 0}
+[7.550217] (-) EventReactorShutdown: {}

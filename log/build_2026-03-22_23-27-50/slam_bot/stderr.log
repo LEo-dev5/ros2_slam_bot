@@ -1,0 +1,13 @@
+[01m[K/home/kang/ros2_ws/src/slam_bot/src/position_estimator.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/kang/ros2_ws/src/slam_bot/src/position_estimator.cpp:36:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::make[m[K’ has not been declared
+   36 |   rclcpp::spin(std::[01;31m[Kmake[m[K::shared<PositionEstimator>());
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/kang/ros2_ws/src/slam_bot/src/position_estimator.cpp:36:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   36 |   rclcpp::spin(std::make::shared<PositionEstimator[01;31m[K>[m[K());
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/kang/ros2_ws/src/slam_bot/src/position_estimator.cpp:36:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   36 |   rclcpp::spin(std::make::shared<PositionEstimator>([01;31m[K)[m[K);
+      |                                                     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/position_estimator.dir/build.make:76: CMakeFiles/position_estimator.dir/src/position_estimator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/position_estimator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
