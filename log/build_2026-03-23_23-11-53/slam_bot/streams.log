@@ -1,0 +1,27 @@
+[0.014s] Invoking command in '/home/kang/ros2_ws/build/slam_bot': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/kang/ros2_ws/build/slam_bot -- -j4 -l4
+[0.105s] [ 50%] Built target position_estimator
+[0.115s] [ 75%] [32mBuilding CXX object CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.o[0m
+[13.402s] [100%] [32m[1mLinking CXX executable kalman_filter[0m
+[14.063s] [100%] Built target kalman_filter
+[14.084s] Invoked command in '/home/kang/ros2_ws/build/slam_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/kang/ros2_ws/build/slam_bot -- -j4 -l4
+[14.102s] Invoking command in '/home/kang/ros2_ws/build/slam_bot': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/kang/ros2_ws/build/slam_bot
+[14.115s] -- Install configuration: ""
+[14.115s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/lib/slam_bot/position_estimator
+[14.115s] -- Installing: /home/kang/ros2_ws/install/slam_bot/lib/slam_bot/kalman_filter
+[14.125s] -- Set non-toolchain portion of runtime path of "/home/kang/ros2_ws/install/slam_bot/lib/slam_bot/kalman_filter" to ""
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/package_run_dependencies/slam_bot
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/parent_prefix_path/slam_bot
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/ament_prefix_path.sh
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/ament_prefix_path.dsv
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/path.sh
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/path.dsv
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.bash
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.sh
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.zsh
+[14.126s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.dsv
+[14.127s] -- Installing: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/package.dsv
+[14.127s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/packages/slam_bot
+[14.127s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/cmake/slam_botConfig.cmake
+[14.127s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/cmake/slam_botConfig-version.cmake
+[14.127s] -- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/package.xml
+[14.129s] Invoked command in '/home/kang/ros2_ws/build/slam_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/kang/ros2_ws/build/slam_bot

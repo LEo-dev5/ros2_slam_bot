@@ -210,6 +210,43 @@ position_estimator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/position_estimator.dir/build.make CMakeFiles/position_estimator.dir/build
 .PHONY : position_estimator/fast
 
+#=============================================================================
+# Target rules for targets named kalman_filter
+
+# Build rule for target.
+kalman_filter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kalman_filter
+.PHONY : kalman_filter
+
+# fast build rule for target.
+kalman_filter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman_filter.dir/build.make CMakeFiles/kalman_filter.dir/build
+.PHONY : kalman_filter/fast
+
+src/kalman_filter.o: src/kalman_filter.cpp.o
+.PHONY : src/kalman_filter.o
+
+# target to build an object file
+src/kalman_filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman_filter.dir/build.make CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.o
+.PHONY : src/kalman_filter.cpp.o
+
+src/kalman_filter.i: src/kalman_filter.cpp.i
+.PHONY : src/kalman_filter.i
+
+# target to preprocess a source file
+src/kalman_filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman_filter.dir/build.make CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.i
+.PHONY : src/kalman_filter.cpp.i
+
+src/kalman_filter.s: src/kalman_filter.cpp.s
+.PHONY : src/kalman_filter.s
+
+# target to generate assembly for a file
+src/kalman_filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kalman_filter.dir/build.make CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.s
+.PHONY : src/kalman_filter.cpp.s
+
 src/position_estimator.o: src/position_estimator.cpp.o
 .PHONY : src/position_estimator.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... slam_bot_uninstall"
 	@echo "... uninstall"
+	@echo "... kalman_filter"
 	@echo "... position_estimator"
+	@echo "... src/kalman_filter.o"
+	@echo "... src/kalman_filter.i"
+	@echo "... src/kalman_filter.s"
 	@echo "... src/position_estimator.o"
 	@echo "... src/position_estimator.i"
 	@echo "... src/position_estimator.s"

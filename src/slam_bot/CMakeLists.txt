@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(Eigen3 REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -17,11 +18,19 @@ add_executable(position_estimator src/position_estimator.cpp)
 target_include_directories(position_estimator PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
-target_compile_features(position_estimator PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+target_compile_features(position_estimator PUBLIC c_std_99 cxx_std_17)
 ament_target_dependencies(position_estimator rclcpp geometry_msgs)
 
+add_executable(kalman_filter src/kalman_filter.cpp)
+target_include_directories(kalman_filter PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
+target_compile_features(kalman_filter PUBLIC c_std_99 cxx_std_17)
+ament_target_dependencies(kalman_filter rclcpp geometry_msgs)
+target_include_directories(kalman_filter PUBLIC ${EIGEN3_INCLUDE_DIR})
 
-install(TARGETS position_estimator
+
+install(TARGETS position_estimator kalman_filter
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
