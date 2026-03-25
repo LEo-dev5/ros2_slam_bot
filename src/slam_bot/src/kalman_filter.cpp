@@ -12,6 +12,7 @@ public:
     Q_ = Eigen::Matrix2d::Identity() * 0.3;
     R_ = Eigen::Matrix2d::Identity() * 0.5;
 
+    publisher_ = this->create_publisher<geometry_msgs::msg::Point>("/estimated_pos", 10);
     subscriber_ = this->create_subscription<geometry_msgs::msg::Point>(
       "/sensor_data", 10,
       std::bind(&KalmanFilter::update, this, std::placeholders::_1));
@@ -33,8 +34,13 @@ private:
 
     RCLCPP_INFO(this->get_logger(), "Estimated: (%.3f, %.3f)", 
       estimated_pos_.x(), estimated_pos_.y());
+      geometry_msgs::msg::Point est_msg;
+      est_msg.x = estimated_pos_.x();
+      est_msg.y = estimated_pos_.y();
+      est_msg.z = 0.0;
+      publisher_->publish(est_msg);
   }
-
+  rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr publisher_;
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr subscriber_;
   Eigen::Vector2d estimated_pos_;
   Eigen::Matrix2d P_, Q_, R_;
