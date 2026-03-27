@@ -49,3 +49,13 @@ ros2 launch foxglove_bridge_launch. xml port:=8765
 - OS : Ubuntu 24.04 LTS (Raspberry Pi 5)
 - ROS2 : Jazzy
 - 언어 : C++17
+
+---
+
+## 로드맵
+- [x] 칼만 필터 기반 위치 추정 노드 구현
+- [x] Foxglove Studio 실시간 시각화
+- [ ] 로봇 이동 시뮬레이션 추가 (이동 경로 추적)
+- [ ] 랜드마크 기반 위치 보정 추가
+- [ ] 2D 지도 생성 (실제 SLAM)
+- [ ] 실제 센서 연동 (LiDAR)
