@@ -22,3 +22,32 @@ Results are visualized using Foxglove Studio.
 [Foxglove Studio]
 ↪Real-time graph visualization
 ```
+
+## Key Features
+- ROS2 Publisher/Subscriber pipeline between nodes
+- Kalman Filter Predict/Update cycle implemented in C++
+- Matrix operations using Eigen3
+- Real-time monitoring via Foxlove Bridge
+
+## Results
+![Kalman Filter Visualization](assets/foxglove_result.png)
+
+- Blue ling : Raw sensor data (noisy)
+- Orange line : Kalman Filter estimated position (smoothed)
+
+## How to Run
+```bash
+# Terminal 1 - Publish sensor data
+ros2 run slam_bot position_estimator
+
+# Terminal 2 - Kalman Filter correction
+ros2 run slam_bot kalman_filter
+
+# Terminal 3 - Foxglove_bridge
+ros2 launch foxglove_bridge foxglove_bridge_launch.xml port:=8765
+```
+
+## Environment
+- OS : Ubuntu 24.04 LTS (Raspberry Pi 5)
+- ROS2 : Jazzy
+- Language : C++17
