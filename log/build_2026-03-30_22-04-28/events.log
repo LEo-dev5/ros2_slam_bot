@@ -1,0 +1,194 @@
+[0.000000] (-) TimerEvent: {}
+[0.000366] (slam_bot) JobQueued: {'identifier': 'slam_bot', 'dependencies': OrderedDict()}
+[0.000680] (slam_bot) JobStarted: {'identifier': 'slam_bot'}
+[0.011150] (slam_bot) JobProgress: {'identifier': 'slam_bot', 'progress': 'cmake'}
+[0.012496] (slam_bot) JobProgress: {'identifier': 'slam_bot', 'progress': 'build'}
+[0.013358] (slam_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kang/ros2_ws/build/slam_bot', '--', '-j4', '-l4'], 'cwd': '/home/kang/ros2_ws/build/slam_bot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kang', 'SSH_CLIENT': '192.168.219.120 62037 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/helpers/browser.sh', 'HOME': '/home/kang', 'OLDPWD': '/home/kang/ros2_ws', 'TERM_PROGRAM_VERSION': '1.100.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-c2d3788e-f651-41b0-8186-626044d8beba.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/kang/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kang', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '865', 'PATH': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kang/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-9c0be6aece.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/kang/ros2_ws/install/slam_bot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kang/ros2_ws/build/slam_bot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.219.120 62037 192.168.219.111 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kang/ros2_ws/install/slam_bot:/opt/ros/jazzy'}), 'shell': False}
+[0.099774] (-) TimerEvent: {}
+[0.107216] (slam_bot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/position_estimator.dir/src/position_estimator.cpp.o\x1b[0m\n'}
+[0.107697] (slam_bot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.o\x1b[0m\n'}
+[0.199886] (-) TimerEvent: {}
+[0.300568] (-) TimerEvent: {}
+[0.400964] (-) TimerEvent: {}
+[0.501455] (-) TimerEvent: {}
+[0.601888] (-) TimerEvent: {}
+[0.702703] (-) TimerEvent: {}
+[0.804758] (-) TimerEvent: {}
+[0.905244] (-) TimerEvent: {}
+[1.005779] (-) TimerEvent: {}
+[1.107811] (-) TimerEvent: {}
+[1.208270] (-) TimerEvent: {}
+[1.308754] (-) TimerEvent: {}
+[1.409184] (-) TimerEvent: {}
+[1.509594] (-) TimerEvent: {}
+[1.609982] (-) TimerEvent: {}
+[1.710494] (-) TimerEvent: {}
+[1.811569] (-) TimerEvent: {}
+[1.912079] (-) TimerEvent: {}
+[2.012544] (-) TimerEvent: {}
+[2.112937] (-) TimerEvent: {}
+[2.213416] (-) TimerEvent: {}
+[2.313929] (-) TimerEvent: {}
+[2.414380] (-) TimerEvent: {}
+[2.514829] (-) TimerEvent: {}
+[2.615255] (-) TimerEvent: {}
+[2.715685] (-) TimerEvent: {}
+[2.816126] (-) TimerEvent: {}
+[2.916556] (-) TimerEvent: {}
+[3.016936] (-) TimerEvent: {}
+[3.117341] (-) TimerEvent: {}
+[3.217756] (-) TimerEvent: {}
+[3.318247] (-) TimerEvent: {}
+[3.418711] (-) TimerEvent: {}
+[3.520315] (-) TimerEvent: {}
+[3.620744] (-) TimerEvent: {}
+[3.721168] (-) TimerEvent: {}
+[3.821573] (-) TimerEvent: {}
+[3.921978] (-) TimerEvent: {}
+[4.022414] (-) TimerEvent: {}
+[4.122810] (-) TimerEvent: {}
+[4.223240] (-) TimerEvent: {}
+[4.323670] (-) TimerEvent: {}
+[4.424068] (-) TimerEvent: {}
+[4.524545] (-) TimerEvent: {}
+[4.624949] (-) TimerEvent: {}
+[4.725389] (-) TimerEvent: {}
+[4.825827] (-) TimerEvent: {}
+[4.926326] (-) TimerEvent: {}
+[5.026749] (-) TimerEvent: {}
+[5.127186] (-) TimerEvent: {}
+[5.227585] (-) TimerEvent: {}
+[5.327978] (-) TimerEvent: {}
+[5.428387] (-) TimerEvent: {}
+[5.528778] (-) TimerEvent: {}
+[5.629185] (-) TimerEvent: {}
+[5.729587] (-) TimerEvent: {}
+[5.829975] (-) TimerEvent: {}
+[5.930443] (-) TimerEvent: {}
+[6.030966] (-) TimerEvent: {}
+[6.131712] (-) TimerEvent: {}
+[6.232410] (-) TimerEvent: {}
+[6.332794] (-) TimerEvent: {}
+[6.433196] (-) TimerEvent: {}
+[6.533578] (-) TimerEvent: {}
+[6.634299] (-) TimerEvent: {}
+[6.735015] (-) TimerEvent: {}
+[6.835434] (-) TimerEvent: {}
+[6.936121] (-) TimerEvent: {}
+[7.036570] (-) TimerEvent: {}
+[7.137248] (-) TimerEvent: {}
+[7.237642] (-) TimerEvent: {}
+[7.338030] (-) TimerEvent: {}
+[7.438734] (-) TimerEvent: {}
+[7.539122] (-) TimerEvent: {}
+[7.639815] (-) TimerEvent: {}
+[7.740491] (-) TimerEvent: {}
+[7.840859] (-) TimerEvent: {}
+[7.941347] (-) TimerEvent: {}
+[8.041752] (-) TimerEvent: {}
+[8.142442] (-) TimerEvent: {}
+[8.201160] (slam_bot) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable position_estimator\x1b[0m\n'}
+[8.242568] (-) TimerEvent: {}
+[8.343118] (-) TimerEvent: {}
+[8.443932] (-) TimerEvent: {}
+[8.544490] (-) TimerEvent: {}
+[8.594069] (slam_bot) StdoutLine: {'line': b'[ 75%] Built target position_estimator\n'}
+[8.644611] (-) TimerEvent: {}
+[8.745000] (-) TimerEvent: {}
+[8.845439] (-) TimerEvent: {}
+[8.945779] (-) TimerEvent: {}
+[9.046134] (-) TimerEvent: {}
+[9.146582] (-) TimerEvent: {}
+[9.247016] (-) TimerEvent: {}
+[9.347502] (-) TimerEvent: {}
+[9.447904] (-) TimerEvent: {}
+[9.548313] (-) TimerEvent: {}
+[9.648704] (-) TimerEvent: {}
+[9.749102] (-) TimerEvent: {}
+[9.849492] (-) TimerEvent: {}
+[9.949865] (-) TimerEvent: {}
+[10.050238] (-) TimerEvent: {}
+[10.150596] (-) TimerEvent: {}
+[10.250956] (-) TimerEvent: {}
+[10.351326] (-) TimerEvent: {}
+[10.451670] (-) TimerEvent: {}
+[10.552028] (-) TimerEvent: {}
+[10.652422] (-) TimerEvent: {}
+[10.752797] (-) TimerEvent: {}
+[10.855236] (-) TimerEvent: {}
+[10.955631] (-) TimerEvent: {}
+[11.056006] (-) TimerEvent: {}
+[11.156377] (-) TimerEvent: {}
+[11.256727] (-) TimerEvent: {}
+[11.357077] (-) TimerEvent: {}
+[11.457438] (-) TimerEvent: {}
+[11.557801] (-) TimerEvent: {}
+[11.658168] (-) TimerEvent: {}
+[11.758512] (-) TimerEvent: {}
+[11.858858] (-) TimerEvent: {}
+[11.959219] (-) TimerEvent: {}
+[12.059567] (-) TimerEvent: {}
+[12.159925] (-) TimerEvent: {}
+[12.260286] (-) TimerEvent: {}
+[12.360637] (-) TimerEvent: {}
+[12.460996] (-) TimerEvent: {}
+[12.561415] (-) TimerEvent: {}
+[12.661779] (-) TimerEvent: {}
+[12.762133] (-) TimerEvent: {}
+[12.862522] (-) TimerEvent: {}
+[12.962877] (-) TimerEvent: {}
+[13.063244] (-) TimerEvent: {}
+[13.163592] (-) TimerEvent: {}
+[13.263940] (-) TimerEvent: {}
+[13.364324] (-) TimerEvent: {}
+[13.464709] (-) TimerEvent: {}
+[13.565111] (-) TimerEvent: {}
+[13.665511] (-) TimerEvent: {}
+[13.765891] (-) TimerEvent: {}
+[13.866311] (-) TimerEvent: {}
+[13.966740] (-) TimerEvent: {}
+[14.067209] (-) TimerEvent: {}
+[14.167671] (-) TimerEvent: {}
+[14.268069] (-) TimerEvent: {}
+[14.368494] (-) TimerEvent: {}
+[14.468916] (-) TimerEvent: {}
+[14.569335] (-) TimerEvent: {}
+[14.669803] (-) TimerEvent: {}
+[14.770258] (-) TimerEvent: {}
+[14.870692] (-) TimerEvent: {}
+[14.945818] (slam_bot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable kalman_filter\x1b[0m\n'}
+[14.970806] (-) TimerEvent: {}
+[15.071324] (-) TimerEvent: {}
+[15.172134] (-) TimerEvent: {}
+[15.272669] (-) TimerEvent: {}
+[15.373579] (-) TimerEvent: {}
+[15.474140] (-) TimerEvent: {}
+[15.574559] (-) TimerEvent: {}
+[15.660966] (slam_bot) StdoutLine: {'line': b'[100%] Built target kalman_filter\n'}
+[15.674674] (-) TimerEvent: {}
+[15.679602] (slam_bot) CommandEnded: {'returncode': 0}
+[15.680541] (slam_bot) JobProgress: {'identifier': 'slam_bot', 'progress': 'install'}
+[15.696248] (slam_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kang/ros2_ws/build/slam_bot'], 'cwd': '/home/kang/ros2_ws/build/slam_bot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kang', 'SSH_CLIENT': '192.168.219.120 62037 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/helpers/browser.sh', 'HOME': '/home/kang', 'OLDPWD': '/home/kang/ros2_ws', 'TERM_PROGRAM_VERSION': '1.100.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-c2d3788e-f651-41b0-8186-626044d8beba.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/kang/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kang', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '865', 'PATH': '/home/kang/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kang/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-9c0be6aece.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/kang/ros2_ws/install/slam_bot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kang/ros2_ws/build/slam_bot', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.219.120 62037 192.168.219.111 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kang/ros2_ws/install/slam_bot:/opt/ros/jazzy'}), 'shell': False}
+[15.710138] (slam_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.711005] (slam_bot) StdoutLine: {'line': b'-- Installing: /home/kang/ros2_ws/install/slam_bot/lib/slam_bot/position_estimator\n'}
+[15.714662] (slam_bot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/kang/ros2_ws/install/slam_bot/lib/slam_bot/position_estimator" to ""\n'}
+[15.714907] (slam_bot) StdoutLine: {'line': b'-- Installing: /home/kang/ros2_ws/install/slam_bot/lib/slam_bot/kalman_filter\n'}
+[15.725026] (slam_bot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/kang/ros2_ws/install/slam_bot/lib/slam_bot/kalman_filter" to ""\n'}
+[15.725293] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/package_run_dependencies/slam_bot\n'}
+[15.726885] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/parent_prefix_path/slam_bot\n'}
+[15.727451] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/ament_prefix_path.sh\n'}
+[15.727556] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/ament_prefix_path.dsv\n'}
+[15.727645] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/path.sh\n'}
+[15.727767] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/environment/path.dsv\n'}
+[15.727896] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.bash\n'}
+[15.727978] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.sh\n'}
+[15.728058] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.zsh\n'}
+[15.728137] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/local_setup.dsv\n'}
+[15.728239] (slam_bot) StdoutLine: {'line': b'-- Installing: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/package.dsv\n'}
+[15.728332] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/ament_index/resource_index/packages/slam_bot\n'}
+[15.728420] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/cmake/slam_botConfig.cmake\n'}
+[15.728507] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/cmake/slam_botConfig-version.cmake\n'}
+[15.728690] (slam_bot) StdoutLine: {'line': b'-- Up-to-date: /home/kang/ros2_ws/install/slam_bot/share/slam_bot/package.xml\n'}
+[15.729310] (slam_bot) CommandEnded: {'returncode': 0}
+[15.755724] (slam_bot) JobEnded: {'identifier': 'slam_bot', 'rc': 0}
+[15.756932] (-) EventReactorShutdown: {}

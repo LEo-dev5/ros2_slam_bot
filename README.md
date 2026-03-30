@@ -32,8 +32,13 @@ Results are visualized using Foxglove Studio.
 ## Results
 ![Kalman Filter Visualization](assets/foxglove_result.png)
 
-- Blue ling : Raw sensor data (noisy)
+- Blue line : Raw sensor data (noisy)
 - Orange line : Kalman Filter estimated position (smoothed)
+
+![Route Visualization](assets/route_visualization.png)
+
+- ㄷ-shaped movement path with noise
+- Direction changes: right → up → left
 
 ## How to Run
 ```bash
