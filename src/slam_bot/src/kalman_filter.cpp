@@ -23,9 +23,14 @@ public:
 private:
   void update(const geometry_msgs::msg::Point::SharedPtr msg)
   {
+    if (!is_initialized_) {
+      estimated_pos_ << msg->x, msg->y;
+      is_initialized_ = true;
+      return;
+    }
     // Predict
     P_ = P_ + Q_;
-
+    
     // Update
     Eigen::Matrix2d K = P_ * (P_ + R_).inverse();
     Eigen::Vector2d z(msg->x, msg->y);
@@ -44,6 +49,7 @@ private:
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr subscriber_;
   Eigen::Vector2d estimated_pos_;
   Eigen::Matrix2d P_, Q_, R_;
+  bool is_initialized_ = false;
 };
 
 int main(int argc, char ** argv)
