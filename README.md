@@ -40,6 +40,11 @@ Results are visualized using Foxglove Studio.
 - ㄷ-shaped movement path with noise
 - Direction changes: right → up → left
 
+![Kalman Filter Route Correction](assets/kalman_route.png)
+
+- Orange line: Noisy movement path
+- Blue line: Kalman Filter corrected path (smoother tracking)
+
 ## How to Run
 ```bash
 # Terminal 1 - Publish sensor data
