@@ -1,6 +1,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/point.hpp>
 #include <Eigen/Dense>
+#include <vector>
 
 class KalmanFilter : public rclcpp::Node
 {
@@ -21,6 +22,7 @@ public:
   }
 
 private:
+ 
   void update(const geometry_msgs::msg::Point::SharedPtr msg)
   {
     if (!is_initialized_) {
@@ -44,12 +46,26 @@ private:
       est_msg.y = estimated_pos_.y();
       est_msg.z = 0.0;
       publisher_->publish(est_msg);
+      for (const auto& lm : landmarks_) {
+        double dist = (lm - estimated_pos_).norm();
+        if (dist < 1.5) {
+          Eigen::Matrix2d K_lm = P_ * (P_ + R_).inverse();
+          estimated_pos_ = estimated_pos_ + K_lm * (lm - estimated_pos_);
+          P_ = (Eigen::Matrix2d::Identity() - K_lm) * P_;
+          RCLCPP_INFO(this->get_logger(), "Landmark detected at (%.1f, %.1f)! Position corrected.", lm.x(), lm.y());
+        }
+      }
   }
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr publisher_;
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr subscriber_;
   Eigen::Vector2d estimated_pos_;
   Eigen::Matrix2d P_, Q_, R_;
   bool is_initialized_ = false;
+   std::vector<Eigen::Vector2d> landmarks_ = {
+  {2.5, 0.0},
+  {5.0, 2.5},
+  {2.5, 5.0}
+  };
 };
 
 int main(int argc, char ** argv)
