@@ -32,6 +32,7 @@ Foxglove Studio로 결과를 시각화 합니다.
 
 - 파란선 : 노이즈 섞인 원본 센서 데이터
 - 주황선 : 칼만 필터가 보정한 위치 (노이즈 감소)
+
 ![ㄷ자 경로 시각화](assets/route_visualization.png)
 
 - 노이즈가 섞인 ㄷ자 이동 경로
@@ -41,6 +42,9 @@ Foxglove Studio로 결과를 시각화 합니다.
 
 - 주황선: 노이즈 섞인 실제 이동 경로
 - 파란선: 칼만 필터가 보정한 경로 (더 부드럽게 추적)
+
+![랜드마크 경로 보정] (assets/landmark_result.png)
+
 
 ## 실행 방법
 ```bash
