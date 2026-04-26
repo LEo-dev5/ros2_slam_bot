@@ -45,6 +45,9 @@ Results are visualized using Foxglove Studio.
 - Orange line: Noisy movement path
 - Blue line: Kalman Filter corrected path (smoother tracking)
 
+![landmark](assets/landmark_result.png)
+
+
 ## How to Run
 ```bash
 # Terminal 1 - Publish sensor data
